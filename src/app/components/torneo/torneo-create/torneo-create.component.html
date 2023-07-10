@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h1 class="text-center mb-4">Crear Torneo</h1>
+          <form class="" [formGroup]="torneoForm" (ngSubmit)="createTorneo()">
+            <div class="form-group">
+              <label for="name">Nombre del Torneo:</label>
+              <input id="name" formControlName="name" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="premio">Premio:</label>
+              <input id="premio" formControlName="premio" type="number" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Crear Torneo</button>
+          </form>
+          <button class="btn btn-link btn-block" pButton type="button" routerLink="/torneo/create">Crear Torneo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

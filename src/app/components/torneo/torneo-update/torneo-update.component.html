@@ -1,0 +1,12 @@
+<h1>Actualizar Torneo</h1>
+<form [formGroup]="torneoForm" (ngSubmit)="updateTorneo()">
+    <div>
+        <label>Nombre del Torneo:</label>
+        <input formControlName="name" type="text">
+    </div>
+    <div>
+        <label>Premio:</label>
+        <input formControlName="premio" type="number">
+    </div>
+    <button type="submit">Actualizar Torneo</button>
+</form>

@@ -1,0 +1,18 @@
+<div class="container-fluid flex-grow-1">
+    <div class="row">
+        <!-- Columna para el Sidebar -->
+        <div class="col-md-3">
+            <app-sidebar></app-sidebar>
+        </div>
+        <!-- Columna para el Header y el contenido de la ruta actual -->
+        <div class="col-md-9">
+            <app-header></app-header>
+            <div class="content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="fixed-bottom">   
+    <app-footer></app-footer>
+</footer>

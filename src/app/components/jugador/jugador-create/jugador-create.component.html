@@ -1,0 +1,87 @@
+<h1>Crear Jugador</h1>
+<form [formGroup]="jugadorForm" (ngSubmit)="createJugador()">
+    <div>
+        <label for="firstName">Nombre del Jugador:</label>
+        <input id="firstName" formControlName="firstName" type="text">
+    </div>
+    <div>
+        <label for="dniDotero">DNI del Jugador:</label>
+        <input id="dniDotero" formControlName="dniDotero" type="number">
+    </div>
+    <div>
+        <label for="medallaRank">Medalla Rank:</label>
+        <select id="medallaRank" formControlName="medallaRank">
+            <option value="HERALDO">HERALDO</option>
+            <option value="GUARDIAN">GUARDIAN</option>
+            <option value="CRUSADO">CRUSADO</option>
+            <option value="ARCHONTE">ARCHONTE</option>
+            <option value="LEYENDA">LEYENDA</option>
+            <option value="ANCESTRAL">ANCESTRAL</option>
+            <option value="DIVINO">DIVINO</option>
+            <option value="IMMORTAL">IMMORTAL</option>
+            <option value="UNRANKED">UNRANKED</option>
+        </select>
+    </div>
+    <div>
+        <label for="mmr">MMR:</label>
+        <input id="mmr" formControlName="mmr" type="number">
+    </div>
+    <div>
+        <label for="edad">Edad:</label>
+        <input id="edad" formControlName="edad" type="number">
+    </div>
+    <div>
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select id="nacionalidad" formControlName="nacionalidad">
+            <option value="Perú">Perú</option>
+            <option value="Chile">Chile</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="USA">USA</option>
+            <option value="Canadá">Canadá</option>
+            <option value="México">México</option>
+            <option value="Ucrania">Ucrania</option>
+            <option value="Rusia">Rusia</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Francia">Francia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Filipinas">Filipinas</option>
+            <option value="Malasia">Malasia</option>
+            <option value="Singapur">Singapur</option>
+            <option value="China">China</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Tailandia">Tailandia</option>
+            <option value="Korea">Korea</option>
+            <option value="EmiratosArabes">Emiratos Árabes</option>
+            <option value="Jordania">Jordania</option>
+            <option value="Polonia">Polonia</option>
+            <option value="Suecia">Suecia</option>
+        </select>
+    </div>
+    <div>
+        <label for="telefono">Teléfono:</label>
+        <input id="telefono" formControlName="telefono" type="tel">
+    </div>
+    <div>
+        <label for="correo">Correo:</label>
+        <input id="correo" formControlName="correo" type="email">
+    </div>
+  
+<div>
+    <label for="equipo">Equipo:</label>
+    <select id="equipo" formControlName="equipo">
+        <option *ngFor="let equipo of equipos" [value]="equipo.id">{{equipo.name}}</option>
+    </select>
+</div>
+<div>
+    <label for="torneo">Torneo:</label>
+    <select id="torneo" formControlName="torneo">
+        <option *ngFor="let torneo of torneos" [value]="torneo.id">{{torneo.name}}</option>
+    </select>
+</div>
+
+
+    <button type="submit">Crear Jugador</button>
+</form>

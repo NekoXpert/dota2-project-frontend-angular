@@ -1,0 +1,67 @@
+<h1>Crear Equipo</h1>
+<form [formGroup]="equipoForm" (ngSubmit)="createEquipo()">
+    <table>
+        <tr>
+            <td><label>Nombre del Equipo:</label></td>
+            <td><input formControlName="name" type="text"></td>
+        </tr>
+        <tr>
+            <td><label>Region:</label></td>
+            <td>
+                <select formControlName="region">
+                    <option value="Norteamerica">Norteamerica</option>
+                    <option value="Sudamerica">Sudamerica</option>
+                    <option value="Europa">Europa</option>
+                    <option value="SudesteAsia">SudesteAsia</option>
+                    <option value="China">China</option>
+                    <option value="CIS">CIS</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Puntos de Clasificación:</label></td>
+            <td>
+                <select formControlName="puntosClasificacion">
+            <option value="P0">P0</option>
+                <option value="P10">P10</option>
+                <option value="P20">P20</option>
+                <option value="P30">P30</option>
+                <option value="P40">P40</option>
+                <option value="P50">P50</option>
+                <option value="P60">P60</option>
+                <option value="P70">P70</option>
+                <option value="P80">P80</option>
+                <option value="P90">P90</option>
+                <option value="P100">P100</option>
+                <option value="P200">P200</option>
+                <option value="P300">P300</option>
+                <option value="P400">P400</option>
+                <option value="P500">P500</option>
+                <option value="P600">P600</option>
+                <option value="P700">P700</option>
+                <option value="P800">P800</option>
+                <option value="P900">P900</option>
+                <option value="P1000">P1000</option>
+                <option value="P1100">P1100</option>
+                <option value="P1200">P1200</option>
+                <option value="P1300">P1300</option>
+                <option value="P1400">P1400</option>
+                <option value="P1500">P1500</option>
+                <option value="P1600">P1600</option>
+                <option value="P1700">P1700</option>
+                <option value="P1800">P1800</option>
+                <option value="P1900">P1900</option>
+                <option value="P2000">P2000</option>
+                <option value="P2100">P2100</option>
+                <option value="P2200">P2200</option>
+              </select>
+            </td>
+        </tr>
+    </table>
+    <button type="submit">Crear Equipo</button>
+</form>
+
+
+
+
+

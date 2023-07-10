@@ -1,0 +1,29 @@
+<h1>Lista de Equipos</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Región</th>
+            <th>Puntos de Clasificación</th>
+            <th>Cantidad de Jugadores</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let equipo of equipos">
+            <td>{{ equipo.id }}</td>
+            <td>{{ equipo.name }}</td>
+            <td>{{ equipo.region }}</td>
+            <td>{{ equipo.puntosClasificacion }}</td>
+            <td>{{ equipo.jugadores.length }}</td>
+            <td>
+                <!-- Aquí se puede agregar botones para acciones como editar o eliminar -->
+                <button (click)="goToUpdate(equipo.id)">Editar</button>
+                <!-- goToUpdate es un método que debe existir en tu componente de Equipo y manejar la navegación hacia la pantalla de editar -->
+            <button (click)="deleteEquipo(equipo.id)">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<button pButton type="button" routerLink="/equipo/create" label="Crear Equipo"></button>

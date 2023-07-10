@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'dota2-project-frontend';
+  title = 'dota2-project-frontend-angular';
 }

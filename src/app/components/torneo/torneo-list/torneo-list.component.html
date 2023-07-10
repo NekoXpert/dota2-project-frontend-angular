@@ -1,0 +1,23 @@
+<h1>Torneos</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Premio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let torneo of torneos">
+            <td>{{torneo.id}}</td>
+            <td>{{torneo.name}}</td>
+            <td>{{torneo.premio}}</td>
+            <td>
+                <button (click)="goToUpdate(torneo.id)">Editar</button>
+                <button (click)="deleteTorneo(torneo.id)">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

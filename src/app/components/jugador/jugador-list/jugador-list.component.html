@@ -1,0 +1,61 @@
+
+<div class="grid grid-nogutter surface-section text-800">
+    <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
+        <section>
+            <span class="block text-6xl font-bold mb-1">BIENVENIDO APLICACION ANGULAR + SPRING</span>
+            <div class="text-6xl text-primary font-bold mb-3">TypeScript + Java</div>
+            <p class="mt-0 mb-4 text-700 line-height-3">APLICACIÓN EN DESARROLLO VERSION 1.0.</p>
+
+            <button pButton type="button" routerLink="/equipo/create" label="Crear Equipo" class="mr-3 p-button-raised"></button>
+            <button pButton type="button" routerLink="/torneo/create" label="Crear Torneo" class="p-button-outlined"></button>
+        </section>
+    </div>
+    <div class="col-12 md:col-6 overflow-hidden">
+        <img src="assets/img/fotopreview.png" class="fotito" width="20%" alt="Image" class="md:ml-auto block md:h-full"
+            style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
+    </div>
+</div>
+
+
+<h1>Lista de Jugadores</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>DNI Dotero</th>
+            <th>Medalla de Rango</th>
+            <th>MMR</th>
+            <th>Edad</th>
+            <th>Nacionalidad</th>
+            <th>Teléfono</th>
+            <th>Correo</th>
+            <th>Equipo</th>
+            <th>Torneo</th>
+       
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let jugador of jugadores">
+            <td>{{jugador.id}}</td>
+            <td>{{jugador.firstName}}</td>
+            <td>{{jugador.dniDotero}}</td>
+            <td>{{jugador.medallaRank}}</td>
+            <td>{{jugador.mmr}}</td>
+            <td>{{jugador.edad}}</td>
+            <td>{{jugador.nacionalidad}}</td>
+            <td>{{jugador.telefono}}</td>
+            <td>{{jugador.correo}}</td>
+            <td>{{jugador.equipo.name}}</td>
+            <td>{{jugador.torneo.name}}</td>
+      
+            <td>
+                <button (click)="goToUpdate(jugador.id)">Editar</button>
+                <button (click)="deleteJugador(jugador.id)">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<button pButton type="button" routerLink="/jugador/create" label="Crear Equipo"></button>

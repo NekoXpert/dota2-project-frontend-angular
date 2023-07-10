@@ -1,0 +1,44 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.register-card {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.register-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.register-form-label {
+    font-weight: bold;
+}
+
+.register-form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}

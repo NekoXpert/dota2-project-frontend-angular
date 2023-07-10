@@ -1,0 +1,33 @@
+<!-- register.component.html -->
+<div class="register-container">
+    <div class="register-card">
+        <h2 class="register-title">Regístrate</h2>
+
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
+            <div class="register-form-field">
+                <label for="firstname" class="register-form-label">Nombre</label>
+                <input id="firstname" type="text" pInputText formControlName="firstname" />
+            </div>
+            <div class="register-form-field">
+                <label for="lastname" class="register-form-label">Apellido</label>
+                <input id="lastname" type="text" pInputText formControlName="lastname" />
+            </div>
+            <div class="register-form-field">
+                <label for="username" class="register-form-label">Usuario</label>
+                <input id="username" type="text" pInputText formControlName="username" />
+            </div>
+            <div class="register-form-field">
+                <label for="email" class="register-form-label">Correo Electrónico</label>
+                <input id="email" type="email" pInputText formControlName="email" />
+            </div>
+            <div class="register-form-field">
+                <label for="password" class="register-form-label">Contraseña</label>
+                <input id="password" type="password" pInputText formControlName="password" />
+            </div>
+            <div class="register-form-actions">
+                <button pButton type="submit" label="Registrar"></button>
+                <button pButton type="button" label="Ya tienes cuenta? Ingresa" (click)="onLogin()"></button>
+            </div>
+        </form>
+    </div>
+</div>

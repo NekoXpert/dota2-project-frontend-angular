@@ -1,0 +1,43 @@
+.p-d-flex {
+  display: flex;
+}
+
+.p-flex-column {
+  flex-direction: column;
+}
+
+.p-ai-start {
+  align-items: flex-start;
+}
+
+.user-card {
+  margin-bottom: 3px;
+}
+
+.user-card img {
+  margin-bottom: 2px;
+}
+
+.user-name {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #00bcd4;
+}
+
+nav button {
+  width: 100%;
+}
