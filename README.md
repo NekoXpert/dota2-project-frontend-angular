@@ -1,3 +1,5 @@
+<img src="/src/img-preview/previewdota2app.png" width="640" height="360">
+
 # Dota2ProjectFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
