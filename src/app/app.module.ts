@@ -24,7 +24,7 @@ import { EquipoUpdateComponent } from './components/equipo/equipo-update/equipo-
 import { TorneoCreateComponent } from './components/torneo/torneo-create/torneo-create.component';
 import { TorneoListComponent } from './components/torneo/torneo-list/torneo-list.component';
 import { TorneoUpdateComponent } from './components/torneo/torneo-update/torneo-update.component';
-
+import { ToolbarModule } from 'primeng/toolbar';
 
 @NgModule({
   declarations: [
@@ -56,7 +56,9 @@ import { TorneoUpdateComponent } from './components/torneo/torneo-update/torneo-
     ReactiveFormsModule,
     InputTextModule,
     ButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    ToolbarModule,
+   
     
   ],
   providers: [],

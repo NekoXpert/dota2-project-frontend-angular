@@ -1,1 +1,35 @@
-body{background-color: rgb(36, 35, 35);}
+/* Author: Felipe reyes  => { Nekosor } Github*/
+footer {
+  background-color: rgb(36, 35, 35);
+  color: rgb(149, 35, 35);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+span{color:white}
+  .custom-footer {
+  background-color: rgba(40, 40, 40, 0.871);
+  color: rgb(2, 31, 36);
+  text-align: center;
+
+  .p-button {
+    display: inline-block;
+    margin: 0 1.4rem;
+    padding:0.2em 0em 0em 0.5em;
+
+    color: rgb(34, 182, 250);
+    background-color:rgb(247, 247, 229);
+  }
+}
+.custom-footer{
+.p-button:focus {
+color:rgb(247, 247, 229);
+background-color: rgb(34, 182, 250);
+box-shadow: 0 0 0 1rem rgba(253, 245, 141, 0.434), 0 0 0 2rem rgba(7, 230, 255, 0.61);
+transition: 300ms;
+}
+}

@@ -9,7 +9,6 @@ import { TorneoCreateComponent } from './components/torneo/torneo-create/torneo-
 import { EquipoCreateComponent } from './components/equipo/equipo-create/equipo-create.component';
 import { EquipoListComponent } from './components/equipo/equipo-list/equipo-list.component';
 import { EquipoUpdateComponent } from './components/equipo/equipo-update/equipo-update.component';
-
 import { JugadorCreateComponent } from './components/jugador/jugador-create/jugador-create.component';
 import { JugadorListComponent } from './components/jugador/jugador-list/jugador-list.component';
 import { JugadorUpdateComponent } from './components/jugador/jugador-update/jugador-update.component';
@@ -19,7 +18,7 @@ import { TorneoUpdateComponent } from './components/torneo/torneo-update/torneo-
 
 
 const routes: Routes = [
-
+  { path: '', redirectTo: 'intro', pathMatch: 'full' },
   { path: 'intro', component: IntroComponent },
   {
     path: 'auth', children: [
@@ -41,7 +40,7 @@ const routes: Routes = [
     ]
   },
  
-    { path: '', redirectTo: 'intro', pathMatch: 'full' },
+  
 ];
 
 @NgModule({

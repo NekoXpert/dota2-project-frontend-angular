@@ -37,19 +37,19 @@ export class RegisterComponent implements OnInit {
     // this.authService.register(this.registerForm.value).subscribe(
     //   data => {
     //     // Redirigir al inicio de sesión o página de inicio después del registro exitoso
-    //     this.router.navigateByUrl('/login');
+    //     this.router.navigateByUrl('/auth/login');
     //   },
     //   error => {
     //     // Manejar errores de registro
     //   }
     // );
    // else{
-    this.router.navigateByUrl('/login');
+    this.router.navigateByUrl('auth/login');
     //}
   }
 
   onLogin(): void {
     // Redirige al usuario a la página de inicio de sesión
-    this.router.navigateByUrl('/login');
+    this.router.navigateByUrl('/auth/login');
   }
 }

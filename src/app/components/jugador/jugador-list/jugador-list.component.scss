@@ -7,6 +7,7 @@ h1 {
 table {
   margin-bottom: 16px;
   width: 100%;
+  
 
   td {
     padding: 8px;
@@ -39,4 +40,16 @@ button[type="submit"]:hover {
 }
 table {
   border:solid 1px rgb(255, 255, 255);
+}
+.fotito{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 24%;
+  padding: 1em 1em 0em 1.4em;
+ filter: drop-shadow(0 0 1rem rgba(255, 234, 0, 0.46));
+}
+
+.contenedor-foto{padding: 1em 1em 0em 1.4em;
+  filter: drop-shadow(0 0 1rem rgba(178, 255, 252, 0.743));
 }

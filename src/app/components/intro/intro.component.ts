@@ -1,3 +1,4 @@
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
@@ -18,7 +19,7 @@ export class IntroComponent {
     setTimeout(() => {
       this.loading = false;
       this.router.navigate(['/auth/login']); // redirecciona al login después de la introducción
-    }, 1000); // Puedes ajustar este tiempo a tu gusto Nekosor
+    }, 2000); // Puedes ajustar este tiempo a tu gusto Nekosor
   }
 
 }

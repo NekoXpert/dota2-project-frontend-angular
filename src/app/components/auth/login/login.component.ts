@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
   onRegister() {
     // Aquí podrías redirigir al usuario a la página de registro.
     console.log('Botón de registro presionado.');
-    this.router.navigate(['/register']);
+    this.router.navigate(['/auth/register']);
   }
 }
 
