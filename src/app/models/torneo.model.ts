@@ -1,4 +1,4 @@
-
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Jugador } from "./jugador.model";
 
 export class Torneo {

@@ -1,9 +1,8 @@
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Equipo } from 'src/app/models/equipo.model';
-import { Medalla, Pais } from 'src/app/models/jugador.model';
-
 import { Torneo } from 'src/app/models/torneo.model';
 import { EquipoService } from 'src/app/services/equipo/equipo.service';
 import { HttpErrorResponse } from '@angular/common/http';

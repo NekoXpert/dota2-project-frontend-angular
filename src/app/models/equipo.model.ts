@@ -1,3 +1,4 @@
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Jugador } from "./jugador.model";
 
 export enum Zona {

@@ -1,6 +1,6 @@
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { IntroComponent } from './components/intro/intro.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';

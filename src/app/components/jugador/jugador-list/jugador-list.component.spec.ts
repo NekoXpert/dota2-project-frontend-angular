@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { JugadorListComponent } from './jugador-list.component';
 
 describe('JugadorListComponent', () => {

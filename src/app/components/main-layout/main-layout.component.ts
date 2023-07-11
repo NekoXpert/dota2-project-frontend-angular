@@ -1,3 +1,4 @@
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Component } from '@angular/core';
 
 @Component({

@@ -1,3 +1,4 @@
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Equipo } from "./equipo.model";
 
 import { Torneo } from "./torneo.model";

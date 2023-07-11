@@ -1,3 +1,4 @@
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { JugadorService } from 'src/app/services/jugador/jugador.service';

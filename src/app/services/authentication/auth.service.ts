@@ -1,4 +1,4 @@
-// auth.service.ts
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Injectable } from '@angular/core';
 
 @Injectable({

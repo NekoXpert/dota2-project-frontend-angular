@@ -1,3 +1,4 @@
+/* Author: Felipe reyes  => { Nekosor } Github*/
 import { Component, OnInit } from '@angular/core';
 import { Equipo } from 'src/app/models/equipo.model';
 import { EquipoService } from 'src/app/services/equipo/equipo.service';

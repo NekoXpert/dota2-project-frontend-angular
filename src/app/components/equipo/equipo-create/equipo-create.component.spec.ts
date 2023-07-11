@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { EquipoCreateComponent } from './equipo-create.component';
 
 describe('EquipoCreateComponent', () => {
